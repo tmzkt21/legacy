@@ -1,0 +1,18 @@
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.legacy.web.mappers.HelpMapper">
+<select id="selectAll" resultType="com.legacy.web.domains.HelpDTO">
+   select 
+   	car_no userNo,
+   	rank,
+   	user,
+   	tear,
+   	point,
+   	level,
+   	wins
+   	from help
+   	</select>
+   	
+</mapper>
+

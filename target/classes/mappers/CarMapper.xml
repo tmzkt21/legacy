@@ -1,0 +1,21 @@
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.legacy.web.mappers.CarMapper">
+<select id="selectAll" resultType="com.legacy.web.domains.CarDTO">
+   select 
+   	car_no carNO,
+   	img,
+   	name,
+   	year,
+   	fuel,
+   	km,
+   	price,
+   	span
+   	from car
+   	</select>
+   	
+</mapper>
+
+
+
